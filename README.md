@@ -6,9 +6,14 @@
 
 **Link to Part 1** : [Part 1](https://github.com/isaiahhaley0/AssignmentOne)
 
-**Technologies Used**: Vue.js, native js, bootstrap.
+**Check it out here**: [Github Pages](https://isaiahhaley0.github.io/AssignmentOne/homepage.html)
+
+**Technologies Used**: Vue.js, native js, bootstrap, HTML, css.
 
 **Check it out here**: [Github Pages](https://isaiahhaley0.github.io/assignment2pt1/)
+
+**Description**:  App uses Vue.js to interact with google books api and display books and information about books, such as 
+rating and available formats.
 
 **Additional Features:**
 	
