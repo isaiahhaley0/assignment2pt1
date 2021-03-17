@@ -19,7 +19,7 @@ const app = Vue.createApp({
             this.searchGoogleBooks()    
             if(this.curretPage > 0)
             {
-                document.getElementById("prev").classList.remove(invisible);
+                document.getElementById("prev").classList.remove("invisible");
             }    
         },
         prevPage() {
@@ -31,7 +31,7 @@ const app = Vue.createApp({
             }
             if(this.curretPage == 0)
             {
-                document.getElementById("prev").classList.add(invisible);
+                document.getElementById("prev").classList.add("invisible");
             }    
         }
     }

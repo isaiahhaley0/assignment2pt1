@@ -13,6 +13,8 @@ app.component('book-display', {
     <a class="list-group-item list-group-item-action active" :href="this.bookObj.selfLink">{{this.bookObj.volumeInfo.title}}</a>
     <li class="list-group-item">{{this.bookObj.volumeInfo.authors}}</li>
     <li class="list-group-item">{{this.bookObj.volumeInfo.publisher}}, {{this.bookObj.volumeInfo.publishedDate}}</li>
+    <li class="list-group-item" > Available As EPUB: {{this.bookObj.accessInfo.epub.isAvailable}} </li>
+    <li class="list-group-item" > Available As PDF: {{this.bookObj.accessInfo.pdf.isAvailable}} </li>
     <img v-if="this.bookObj.volumeInfo.imageLinks.thumbnail != undefined" :src="this.bookObj.volumeInfo.imageLinks.thumbnail" width="150" height="150">
     </ul>
      `,
