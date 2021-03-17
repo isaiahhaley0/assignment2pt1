@@ -10,4 +10,4 @@
 
 **Additional Features:**
 	
-	The additional fields that I added to  the search results are the formats the book is availaible in and a rating, that also displays a star rating.
+The additional fields that I added to  the search results are the formats the book is availaible in and a rating, that also displays a star rating. The star rating is automatically selected and displays the proper star rating to within half a star.
