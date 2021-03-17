@@ -21,6 +21,7 @@ const app = Vue.createApp({
             {
                 document.getElementById("prev").classList.remove("invisible");
             }    
+            this.$forceUpdate();
         },
         prevPage() {
 
@@ -33,6 +34,14 @@ const app = Vue.createApp({
             {
                 document.getElementById("prev").classList.add("invisible");
             }    
+            this.$forceUpdate();
+        },
+        resetPage(){
+            this.curretPage=0;
+            this.keyword = '';
+            this.searchGoogleBooks();
+            document.getElementById("prev").classList.add("invisible");
+            this.$forceUpdate();
         }
     }
 })
