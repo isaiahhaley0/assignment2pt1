@@ -6,16 +6,7 @@ const app = Vue.createApp({
             result: null
         }
     },
-    "pagination": {
-        "total": 10000,
-        "per_page": 50,
-        "current_page": 15,
-        "last_page": 200,
-        "next_page_url": "/api/stories?page=16",
-        "prev_page_url": "/api/stories?page=14",
-        "from": 751,
-        "to": 800,
-      },
+   
     methods: {
         searchGoogleBooks() {
              
@@ -26,13 +17,21 @@ const app = Vue.createApp({
         nextPage() {
             this.curretPage += 1
             this.searchGoogleBooks()    
+            if(this.curretPage > 0)
+            {
+                document.getElementById("prev").classList.remove(invisible);
+            }    
         },
         prevPage() {
 
 
             if(this.curretPage > 0){
-            this.curretPage -= 1
-            this.searchGoogleBooks()
+            this.curretPage -= 1;
+            this.searchGoogleBooks();
+            }
+            if(this.curretPage == 0)
+            {
+                document.getElementById("prev").classList.add(invisible);
             }    
         }
     }

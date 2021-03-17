@@ -1,3 +1,7 @@
 .hasError{
     color: hotpink;
 }
+
+.invisible{
+    display: none;
+}
